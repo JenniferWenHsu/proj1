@@ -1,10 +1,15 @@
 # Q0: Why is this error being thrown?
+Answer: Because the controller for Pokemon has not been created yet. 
 
 # Q1: How are the random Pokemon appearing? What is the common factor between all the possible Pokemon that appear? *
 
 # Question 2a: What does the following line do "<%= button_to "Throw a Pokeball!", capture_path(id: @pokemon), :class => "button medium", :method => :patch %>"? Be specific about what "capture_path(id: @pokemon)" is doing. If you're having trouble, look at the Help section in the README.
 
+Answer: It is creating a button named "Throw a Pokeball!" that calles the capture_path. Rails will then look in the routes file and call the capture method in the pokemons' controller. 
+
 # Question 3: What would you name your own Pokemon?
+
+
 
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
 
