@@ -3,6 +3,7 @@
 <p>Email: <%= @trainer.email if @trainer.email %></p>
 
 <p>Pokemons</p>
+<%= button_to "Create your own pokemon", pokemons_new_path, :class => "button medium", :method => :get%>
 <ul>
 	<% @trainer.pokemons.each do |p| %> 
 	<li>Name: <%= p.name if p.name%>  Level: <%= p.level if p.level%> Health: <%=p.health if p.health%>
@@ -10,3 +11,4 @@
 	</li>
 	<%end %>
 </ul>
+
