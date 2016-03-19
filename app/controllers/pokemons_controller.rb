@@ -25,6 +25,7 @@ class PokemonsController < ApplicationController
     	if @pokemon.save
       		redirect_to trainer_path(current_trainer.id)
       	else
+      		flash[:error] = "The name of your pokemon should be unique and not empty!"
       		redirect_to pokemons_new_path
       	end
   	end
