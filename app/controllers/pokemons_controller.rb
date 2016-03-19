@@ -8,7 +8,7 @@ class PokemonsController < ApplicationController
 
 	def damage
 		@pokemon = current_trainer.pokemons.find(params[:id])
-		@pokemon.health = @pokemon.health - 20
+		@pokemon.health = @pokemon.health - 10
 		if @pokemon.health <= 0
 			@pokemon.destroy
 		else
